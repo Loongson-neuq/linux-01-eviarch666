@@ -13,7 +13,9 @@
 你能获取到的信息：
 
 ```
-
+1. 用户名为caiyi
+2. 系统为archlinux
+3. 执行了git --version命令，用于查看git版本
 ```
 
 ### 2
@@ -27,7 +29,10 @@ caiyi@LAPTOP-I80ETG8J ~> git --version
 你能获取到的信息：
 
 ```
-
+1. 用户名为caiyi
+2. 系统为archlinux
+3. 执行了git --version命令，用于查看git版本
+4. 使用了fish替代传统的bash
 ```
 
 ### 3
@@ -37,7 +42,10 @@ caiyi@LAPTOP-I80ETG8J ~> git --version
 你能获取到的信息：
 
 ```
-
+1. 用户名为yttehs
+2. 电脑类型为ROG-Strix-G16
+3. 使用了fish替代传统的bash，且该用户美化了fish
+4. 截图时间为下午8点7分12秒
 ```
 
 ### 4
@@ -47,7 +55,9 @@ caiyi@LAPTOP-I80ETG8J ~> git --version
 你能获取到的信息：
 
 ```
-
+1. 系统为Archlinux
+3. 使用了zsh替代传统的bash，且该用户美化了zsh
+4. 截图时间为下午8点6分43秒
 ```
 
 ### 5
@@ -64,7 +74,8 @@ PS C:\Users\Caiyi Hsu>
 你能获取到的信息：
 
 ```
-
+1. 系统为windows
+2. 现在所在路径为C:\Users\Caiyi Hsu
 ```
 
 ### 6
@@ -77,7 +88,8 @@ $ git --version
 你能获取到的信息：
 
 ```
-
+1. 系统为windows
+2. 该用户正在使用git bash查看git版本
 ```
 
 ## 编写命令
@@ -130,13 +142,13 @@ $ git --version
 
 ## 填空题
 
-1. 给出一个常用的打印文件内容的命令：____
+1. 给出一个常用的打印文件内容的命令：cat filename
 
-2. 给出一个常用的创建空文件夹的命令：____
+2. 给出一个常用的创建空文件夹的命令：mkdir foldername
 
-3. 如果我下载了一个 a.out 没有执行权限，你应该输入什么命令：____
+3. 如果我下载了一个 a.out 没有执行权限，你应该输入什么命令：chmod +x a.out
 
-4. 在 Shell 中输出 "Hello, world" 的命令：____
+4. 在 Shell 中输出 "Hello, world" 的命令：echo "Hello, world"
 
 ## 简答题
 
@@ -156,6 +168,8 @@ $ git --version
 
 ```
 在这里简述你的操作
+1. 编辑~/.zshrc，加上export PATH="$HOME/riscv-gcc/bin:$PATH"
+2. 运行source ~/.zshrc
 ```
 
 ## 可选附加作业(自学)
@@ -163,11 +177,15 @@ $ git --version
 ### 1
 
 使用 1 行shell命令，在当前文件夹的 a.txt 中写入 "Hello, "
+echo "Hello, " > a.txt
 
 ### 2
 
 使用 1 行shell命令，在上一题的的 a.txt 中追加 "world!"
+echo "world!" >> a.txt
+
 
 ### 3
 
 同过软链接的方式解决[简答题](#简答题)的内容
+ln -s ~/riscv-gcc/bin/* /usr/local/bin/
